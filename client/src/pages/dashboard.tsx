@@ -23,17 +23,17 @@ const CHART_COLORS = [
 ];
 
 function KpiCard({
-  label, value, change, trend, icon: Icon, suffix, testId
+  label, value, change, trend, icon: Icon, testId
 }: {
-  label: string; value: string; change?: string; trend?: "up" | "down"; icon: any; suffix?: string; testId: string;
+  label: string; value: string; change?: string; trend?: "up" | "down"; icon: any; testId: string;
 }) {
   return (
     <Card className="hover-elevate" data-testid={testId}>
       <CardContent className="p-4">
-        <div className="flex items-start justify-between">
-          <div className="space-y-1">
-            <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">{label}</p>
-            <p className="text-xl font-display font-bold tracking-tight">{value}{suffix && <span className="text-sm font-normal text-muted-foreground ml-0.5">{suffix}</span>}</p>
+        <div className="flex items-start justify-between gap-2">
+          <div className="space-y-1 min-w-0">
+            <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-wide truncate">{label}</p>
+            <p className="text-lg font-display font-bold tracking-tight">{value}</p>
           </div>
           <div className="h-8 w-8 rounded-md bg-primary/10 flex items-center justify-center">
             <Icon className="h-4 w-4 text-primary" />
@@ -146,12 +146,12 @@ export default function Dashboard() {
           {/* KPI Cards */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
             <KpiCard label="Total Leads" value={totalLeads.toLocaleString()} change="+32%" trend="up" icon={Users} testId="kpi-total-leads" />
-            <KpiCard label="MQLs (B2B)" value={b2bMQLs.toLocaleString()} change="+18%" trend="up" icon={Target} testId="kpi-b2b-mqls" />
-            <KpiCard label="Pre-screener" value={patientScreenCompletes.toLocaleString()} change="+45%" trend="up" icon={CheckCircle} testId="kpi-prescreener" suffix="comp" />
-            <KpiCard label="Cost/Lead" value={`$${avgCPL.toFixed(2)}`} change="-8%" trend="up" icon={DollarSign} testId="kpi-cpl" />
-            <KpiCard label="Website Visits" value="60.2K" change="+30%" trend="up" icon={Eye} testId="kpi-website" />
-            <KpiCard label="Pipeline (B2B)" value={`$${(pipelineValue / 1000000).toFixed(1)}M`} change="+22%" trend="up" icon={PieIcon} testId="kpi-pipeline" />
-            <KpiCard label="ResearchFriends" value="14.8K" change="+12%" trend="up" icon={Users} testId="kpi-research-friends" />
+            <KpiCard label="B2B MQLs" value={b2bMQLs.toLocaleString()} change="+18%" trend="up" icon={Target} testId="kpi-b2b-mqls" />
+            <KpiCard label="Screeners" value={patientScreenCompletes.toLocaleString()} change="+45%" trend="up" icon={CheckCircle} testId="kpi-prescreener" />
+            <KpiCard label="Cost / Lead" value={`$${avgCPL.toFixed(2)}`} change="-8%" trend="up" icon={DollarSign} testId="kpi-cpl" />
+            <KpiCard label="Site Visits" value="60.2K" change="+30%" trend="up" icon={Eye} testId="kpi-website" />
+            <KpiCard label="Pipeline" value={`$${(pipelineValue / 1000000).toFixed(1)}M`} change="+22%" trend="up" icon={PieIcon} testId="kpi-pipeline" />
+            <KpiCard label="RF Members" value="14.8K" change="+12%" trend="up" icon={Users} testId="kpi-research-friends" />
           </div>
 
           {/* Charts */}
