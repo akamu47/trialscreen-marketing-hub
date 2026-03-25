@@ -12,7 +12,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Checkbox } from "@/components/ui/checkbox";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
-import { Plus, Sparkles, FileText, Send, User, Calendar } from "lucide-react";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Separator } from "@/components/ui/separator";
+import { Plus, Sparkles, FileText, Send, User, Calendar, Eye, Globe, AlertTriangle, CheckCircle2, Clock, X } from "lucide-react";
 import type { ContentItem } from "@shared/schema";
 import { SEED_CONTENT } from "@/data/seed-content";
 
@@ -33,7 +35,7 @@ const complianceChecklist = [
   "No misleading compensation language",
 ];
 
-function ContentCard({ item, onMove }: { item: ContentItem; onMove: (id: number, status: string) => void }) {
+function ContentCard({ item, onMove, onSelect }: { item: ContentItem; onMove: (id: number, status: string) => void; onSelect: (item: ContentItem) => void }) {
   const nextStatus: Record<string, string> = {
     draft: "in_review",
     in_review: "compliance_check",
@@ -42,7 +44,7 @@ function ContentCard({ item, onMove }: { item: ContentItem; onMove: (id: number,
   };
 
   return (
-    <Card className="mb-2 hover-elevate cursor-default" data-testid={`content-card-${item.id}`}>
+    <Card className="mb-2 hover-elevate cursor-pointer hover:ring-1 hover:ring-primary/30 transition-all" data-testid={`content-card-${item.id}`} onClick={() => onSelect(item)}>
       <CardContent className="p-3 space-y-2">
         <div className="flex items-start justify-between gap-2">
           <h4 className="text-xs font-semibold leading-tight line-clamp-2">{item.title}</h4>
@@ -54,6 +56,7 @@ function ContentCard({ item, onMove }: { item: ContentItem; onMove: (id: number,
           >
             {item.track}
           </Badge>
+          <Badge variant="outline" className="text-[10px] h-5 px-1.5">{item.platform}</Badge>
           {item.complianceStatus === "flagged" && (
             <Badge variant="destructive" className="text-[10px] h-5 px-1.5">Flagged</Badge>
           )}
@@ -64,15 +67,15 @@ function ContentCard({ item, onMove }: { item: ContentItem; onMove: (id: number,
           <Calendar className="h-3 w-3 ml-1" />
           <span>{new Date(item.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}</span>
         </div>
-        {item.complianceNotes && (
-          <p className="text-[10px] text-yellow-700 dark:text-yellow-300 bg-yellow-50 dark:bg-yellow-900/20 rounded px-2 py-1 line-clamp-2">{item.complianceNotes}</p>
+        {item.body && (
+          <p className="text-[10px] text-muted-foreground line-clamp-2 leading-relaxed">{item.body}</p>
         )}
         {nextStatus[item.status] && (
           <Button
             size="sm"
             variant="ghost"
             className="h-6 text-[10px] w-full mt-1 text-primary hover:text-primary hover:bg-primary/10"
-            onClick={() => onMove(item.id, nextStatus[item.status])}
+            onClick={(e) => { e.stopPropagation(); onMove(item.id, nextStatus[item.status]); }}
             data-testid={`button-move-${item.id}`}
           >
             Move to {STATUSES.find(s => s.key === nextStatus[item.status])?.label} →
@@ -86,6 +89,8 @@ function ContentCard({ item, onMove }: { item: ContentItem; onMove: (id: number,
 export default function ContentHub() {
   const [open, setOpen] = useState(false);
   const [checkedItems, setCheckedItems] = useState<boolean[]>(new Array(complianceChecklist.length).fill(false));
+  const [selectedItem, setSelectedItem] = useState<ContentItem | null>(null);
+  const [detailOpen, setDetailOpen] = useState(false);
   const { toast } = useToast();
 
   const { data: apiContent, isLoading: apiLoading, isError } = useQuery<ContentItem[]>({
@@ -274,7 +279,7 @@ export default function ContentHub() {
             </div>
             <div className="flex-1 bg-muted/30 rounded-lg p-2 space-y-0">
               {col.items.map((item) => (
-                <ContentCard key={item.id} item={item} onMove={(id, status) => moveMutation.mutate({ id, status })} />
+                <ContentCard key={item.id} item={item} onMove={(id, status) => moveMutation.mutate({ id, status })} onSelect={(item) => { setSelectedItem(item); setDetailOpen(true); }} />
               ))}
               {col.items.length === 0 && (
                 <div className="flex flex-col items-center justify-center py-8 text-muted-foreground">
@@ -286,6 +291,102 @@ export default function ContentHub() {
           </div>
         ))}
       </div>
+
+      {/* Content Detail Sheet */}
+      <Sheet open={detailOpen} onOpenChange={setDetailOpen}>
+        <SheetContent className="w-full sm:max-w-xl overflow-y-auto">
+          {selectedItem && (
+            <>
+              <SheetHeader className="pb-4">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <Badge
+                    className={`text-xs ${selectedItem.track === "B2B" ? "bg-primary/15 text-primary" : "bg-secondary/15 text-secondary"}`}
+                  >
+                    {selectedItem.track}
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">{selectedItem.contentType}</Badge>
+                  <Badge variant="outline" className="text-xs">
+                    <Globe className="h-3 w-3 mr-1" />
+                    {selectedItem.platform}
+                  </Badge>
+                </div>
+                <SheetTitle className="text-lg font-display leading-tight pt-2">
+                  {selectedItem.title}
+                </SheetTitle>
+                <div className="flex items-center gap-3 text-xs text-muted-foreground pt-1">
+                  <span className="flex items-center gap-1"><User className="h-3 w-3" /> {selectedItem.author}</span>
+                  <span className="flex items-center gap-1"><Calendar className="h-3 w-3" /> {new Date(selectedItem.createdAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</span>
+                  <Badge variant="outline" className="text-[10px]">
+                    {STATUSES.find(s => s.key === selectedItem.status)?.label}
+                  </Badge>
+                </div>
+              </SheetHeader>
+
+              <Separator className="my-4" />
+
+              {/* Full Content */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-sm font-semibold mb-3 flex items-center gap-2">
+                    <Eye className="h-4 w-4 text-primary" />
+                    Content
+                  </h3>
+                  <div className="bg-muted/40 rounded-lg p-4 border">
+                    <div className="whitespace-pre-wrap text-sm leading-relaxed">
+                      {selectedItem.body || "No content body yet."}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Compliance Section */}
+                <div>
+                  <h3 className="text-sm font-semibold mb-3 flex items-center gap-2">
+                    {selectedItem.complianceStatus === "approved" ? (
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                    ) : selectedItem.complianceStatus === "flagged" ? (
+                      <AlertTriangle className="h-4 w-4 text-red-500" />
+                    ) : (
+                      <Clock className="h-4 w-4 text-amber-500" />
+                    )}
+                    Compliance Status: {selectedItem.complianceStatus === "approved" ? "Approved" : selectedItem.complianceStatus === "flagged" ? "Flagged" : "Pending Review"}
+                  </h3>
+                  {selectedItem.complianceNotes && (
+                    <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-3">
+                      <p className="text-xs text-amber-800 dark:text-amber-200 leading-relaxed">{selectedItem.complianceNotes}</p>
+                    </div>
+                  )}
+                  {selectedItem.complianceReviewer && (
+                    <p className="text-xs text-muted-foreground mt-2">Reviewed by: {selectedItem.complianceReviewer} on {selectedItem.complianceDate}</p>
+                  )}
+                </div>
+
+                {/* Metadata */}
+                <div>
+                  <h3 className="text-sm font-semibold mb-3">Details</h3>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div className="bg-muted/30 rounded p-2">
+                      <span className="text-muted-foreground">Type</span>
+                      <p className="font-medium">{selectedItem.contentType}</p>
+                    </div>
+                    <div className="bg-muted/30 rounded p-2">
+                      <span className="text-muted-foreground">Platform</span>
+                      <p className="font-medium">{selectedItem.platform}</p>
+                    </div>
+                    <div className="bg-muted/30 rounded p-2">
+                      <span className="text-muted-foreground">Track</span>
+                      <p className="font-medium">{selectedItem.track}</p>
+                    </div>
+                    <div className="bg-muted/30 rounded p-2">
+                      <span className="text-muted-foreground">Status</span>
+                      <p className="font-medium">{STATUSES.find(s => s.key === selectedItem.status)?.label}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </SheetContent>
+      </Sheet>
     </div>
   );
 }
