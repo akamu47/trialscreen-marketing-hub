@@ -20,13 +20,18 @@ export interface SeedContentItem {
   imageUrl?: string;
 }
 
+// Detect base path for GitHub Pages (served from /trialscreen-marketing-hub/) vs local (/)
+const BASE = window.location.pathname.includes('trialscreen-marketing-hub')
+  ? '/trialscreen-marketing-hub'
+  : '';
+
 // Map content IDs to their branded post images
 export const CONTENT_IMAGES: Record<number, string> = {
-  1: "/content-images/post-ts001-breast-cancer.png",
-  2: "/content-images/post-ts002-fiber-boost.png",
-  4: "/content-images/post-ts004-menopause.png",
-  7: "/content-images/post-ts007-arts-blues.png",
-  8: "/content-images/post-ts008-gut-heart.png",
+  1: `${BASE}/content-images/post-ts001-breast-cancer.png`,
+  2: `${BASE}/content-images/post-ts002-fiber-boost.png`,
+  4: `${BASE}/content-images/post-ts004-menopause.png`,
+  7: `${BASE}/content-images/post-ts007-arts-blues.png`,
+  8: `${BASE}/content-images/post-ts008-gut-heart.png`,
 };
 
 export const SEED_CONTENT: SeedContentItem[] = [
