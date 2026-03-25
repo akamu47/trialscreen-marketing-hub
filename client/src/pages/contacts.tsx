@@ -65,6 +65,7 @@ import {
   Link2,
 } from "lucide-react";
 import type { Contact, Activity } from "@shared/schema";
+import { SEED_CONTACTS } from "@/data/seed-contacts";
 
 // Segment color map
 const SEGMENT_COLORS: Record<string, { bg: string; text: string; dot: string }> = {
@@ -711,9 +712,19 @@ export default function Contacts() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [activityDialogOpen, setActivityDialogOpen] = useState(false);
 
-  const { data: contacts, isLoading } = useQuery<Contact[]>({
+  const { data: apiContacts, isLoading: apiLoading, isError } = useQuery<Contact[]>({
     queryKey: ["/api/contacts"],
+    retry: 1,
+    retryDelay: 500,
   });
+
+  // Fallback to embedded seed data when API is unavailable (static deployment)
+  const contacts: Contact[] | undefined = (apiContacts && apiContacts.length > 0)
+    ? apiContacts
+    : isError || (!apiLoading && (!apiContacts || apiContacts.length === 0))
+      ? SEED_CONTACTS.map((c, i) => ({ ...c, id: i + 1 } as Contact))
+      : undefined;
+  const isLoading = apiLoading && !isError;
 
   const updateStageMutation = useMutation({
     mutationFn: async ({ id, stage }: { id: number; stage: string }) => {
