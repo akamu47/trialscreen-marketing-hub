@@ -16,7 +16,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { Separator } from "@/components/ui/separator";
 import { Plus, Sparkles, FileText, Send, User, Calendar, Eye, Globe, AlertTriangle, CheckCircle2, Clock, X } from "lucide-react";
 import type { ContentItem } from "@shared/schema";
-import { SEED_CONTENT } from "@/data/seed-content";
+import { SEED_CONTENT, CONTENT_IMAGES } from "@/data/seed-content";
 
 const STATUSES = [
   { key: "draft", label: "Draft", color: "bg-muted text-muted-foreground" },
@@ -46,6 +46,15 @@ function ContentCard({ item, onMove, onSelect }: { item: ContentItem; onMove: (i
   return (
     <Card className="mb-2 hover-elevate cursor-pointer hover:ring-1 hover:ring-primary/30 transition-all" data-testid={`content-card-${item.id}`} onClick={() => onSelect(item)}>
       <CardContent className="p-3 space-y-2">
+        {CONTENT_IMAGES[item.id] && (
+          <div className="-mx-3 -mt-3 mb-2">
+            <img
+              src={CONTENT_IMAGES[item.id]}
+              alt={item.title}
+              className="w-full h-32 object-cover rounded-t-lg"
+            />
+          </div>
+        )}
         <div className="flex items-start justify-between gap-2">
           <h4 className="text-xs font-semibold leading-tight line-clamp-2">{item.title}</h4>
         </div>
@@ -326,10 +335,27 @@ export default function ContentHub() {
 
               {/* Full Content */}
               <div className="space-y-6">
+                {/* Post Image Preview */}
+                {CONTENT_IMAGES[selectedItem.id] && (
+                  <div>
+                    <h3 className="text-sm font-semibold mb-3 flex items-center gap-2">
+                      <Eye className="h-4 w-4 text-primary" />
+                      Visual Preview
+                    </h3>
+                    <div className="rounded-lg overflow-hidden border shadow-sm">
+                      <img
+                        src={CONTENT_IMAGES[selectedItem.id]}
+                        alt={selectedItem.title}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  </div>
+                )}
+
                 <div>
                   <h3 className="text-sm font-semibold mb-3 flex items-center gap-2">
-                    <Eye className="h-4 w-4 text-primary" />
-                    Content
+                    <FileText className="h-4 w-4 text-primary" />
+                    Copy
                   </h3>
                   <div className="bg-muted/40 rounded-lg p-4 border">
                     <div className="whitespace-pre-wrap text-sm leading-relaxed">

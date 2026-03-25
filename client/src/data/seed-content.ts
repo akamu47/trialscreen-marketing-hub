@@ -17,7 +17,17 @@ export interface SeedContentItem {
   complianceDate: string | null;
   createdAt: string;
   updatedAt: string;
+  imageUrl?: string;
 }
+
+// Map content IDs to their branded post images
+export const CONTENT_IMAGES: Record<number, string> = {
+  1: "/content-images/post-ts001-breast-cancer.png",
+  2: "/content-images/post-ts002-fiber-boost.png",
+  4: "/content-images/post-ts004-menopause.png",
+  7: "/content-images/post-ts007-arts-blues.png",
+  8: "/content-images/post-ts008-gut-heart.png",
+};
 
 export const SEED_CONTENT: SeedContentItem[] = [
   {
