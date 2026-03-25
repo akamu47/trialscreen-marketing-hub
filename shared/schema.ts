@@ -84,3 +84,41 @@ export const analyticsData = sqliteTable("analytics_data", {
 export const insertAnalyticsDataSchema = createInsertSchema(analyticsData).omit({ id: true });
 export type InsertAnalyticsData = z.infer<typeof insertAnalyticsDataSchema>;
 export type AnalyticsData = typeof analyticsData.$inferSelect;
+
+// CRM Contacts
+export const contacts = sqliteTable("contacts", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  company: text("company").notNull(),
+  segment: text("segment").notNull(),
+  hqLocation: text("hq_location").notNull(),
+  region: text("region").notNull(),
+  keyTitles: text("key_titles").notNull(), // JSON array
+  companySize: text("company_size").notNull(),
+  annualRdSpend: text("annual_rd_spend"),
+  activeTrials: text("active_trials"),
+  relationshipStatus: text("relationship_status").notNull(), // warm, known, cold
+  priority: integer("priority").notNull(),
+  notes: text("notes").notNull().default(""),
+  pipelineStage: text("pipeline_stage").notNull().default("prospect"), // prospect, outreach, engaged, opportunity, customer, monitor
+  existingConnection: integer("existing_connection", { mode: "boolean" }).notNull().default(false),
+  lastActivityDate: text("last_activity_date"),
+  createdAt: text("created_at").notNull(),
+});
+
+export const insertContactSchema = createInsertSchema(contacts).omit({ id: true });
+export type InsertContact = z.infer<typeof insertContactSchema>;
+export type Contact = typeof contacts.$inferSelect;
+
+// CRM Activities
+export const activities = sqliteTable("activities", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  contactId: integer("contact_id").notNull(),
+  activityType: text("activity_type").notNull(), // email, call, meeting, linkedin, note, event
+  description: text("description").notNull(),
+  date: text("date").notNull(),
+  createdBy: text("created_by").notNull(),
+});
+
+export const insertActivitySchema = createInsertSchema(activities).omit({ id: true });
+export type InsertActivity = z.infer<typeof insertActivitySchema>;
+export type Activity = typeof activities.$inferSelect;

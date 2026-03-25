@@ -6,6 +6,8 @@ import {
   campaigns,
   auditLog,
   analyticsData,
+  contacts,
+  activities,
   type InsertContentItem,
   type ContentItem,
   type InsertCampaign,
@@ -14,6 +16,10 @@ import {
   type AuditLog,
   type InsertAnalyticsData,
   type AnalyticsData,
+  type InsertContact,
+  type Contact,
+  type InsertActivity,
+  type Activity,
 } from "@shared/schema";
 
 const sqlite = new Database("data.db");
@@ -40,6 +46,18 @@ export interface IStorage {
   // Analytics
   getAnalyticsData(): AnalyticsData[];
   createAnalyticsData(data: InsertAnalyticsData): AnalyticsData;
+
+  // Contacts
+  getContacts(): Contact[];
+  getContact(id: number): Contact | undefined;
+  createContact(contact: InsertContact): Contact;
+  updateContact(id: number, contact: Partial<InsertContact>): Contact | undefined;
+  deleteContact(id: number): void;
+  getContactsCount(): number;
+
+  // Activities
+  getActivitiesByContact(contactId: number): Activity[];
+  createActivity(activity: InsertActivity): Activity;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -98,6 +116,42 @@ export class DatabaseStorage implements IStorage {
 
   createAnalyticsData(data: InsertAnalyticsData): AnalyticsData {
     return db.insert(analyticsData).values(data).returning().get();
+  }
+
+  // Contacts
+  getContacts(): Contact[] {
+    return db.select().from(contacts).all();
+  }
+
+  getContact(id: number): Contact | undefined {
+    return db.select().from(contacts).where(eq(contacts.id, id)).get();
+  }
+
+  createContact(contact: InsertContact): Contact {
+    return db.insert(contacts).values(contact).returning().get();
+  }
+
+  updateContact(id: number, contact: Partial<InsertContact>): Contact | undefined {
+    return db.update(contacts).set(contact).where(eq(contacts.id, id)).returning().get();
+  }
+
+  deleteContact(id: number): void {
+    db.delete(activities).where(eq(activities.contactId, id)).run();
+    db.delete(contacts).where(eq(contacts.id, id)).run();
+  }
+
+  getContactsCount(): number {
+    const result = db.select().from(contacts).all();
+    return result.length;
+  }
+
+  // Activities
+  getActivitiesByContact(contactId: number): Activity[] {
+    return db.select().from(activities).where(eq(activities.contactId, contactId)).orderBy(desc(activities.date)).all();
+  }
+
+  createActivity(activity: InsertActivity): Activity {
+    return db.insert(activities).values(activity).returning().get();
   }
 }
 

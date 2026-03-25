@@ -1,7 +1,9 @@
 import type { Express } from "express";
 import type { Server } from "http";
 import { storage } from "./storage";
-import { insertContentItemSchema, insertCampaignSchema, insertAuditLogSchema } from "@shared/schema";
+import { insertContentItemSchema, insertCampaignSchema, insertAuditLogSchema, insertContactSchema, insertActivitySchema } from "@shared/schema";
+import * as fs from "fs";
+import * as path from "path";
 
 export async function registerRoutes(server: Server, app: Express) {
   // Content Items
@@ -80,6 +82,62 @@ export async function registerRoutes(server: Server, app: Express) {
   app.get("/api/analytics", (_req, res) => {
     const data = storage.getAnalyticsData();
     res.json(data);
+  });
+
+  // Contacts CRUD
+  app.get("/api/contacts", (_req, res) => {
+    const items = storage.getContacts();
+    res.json(items);
+  });
+
+  app.get("/api/contacts/:id", (req, res) => {
+    const item = storage.getContact(parseInt(req.params.id));
+    if (!item) return res.status(404).json({ error: "Not found" });
+    res.json(item);
+  });
+
+  app.post("/api/contacts", (req, res) => {
+    const parsed = insertContactSchema.safeParse(req.body);
+    if (!parsed.success) return res.status(400).json({ error: parsed.error.message });
+    const item = storage.createContact(parsed.data);
+    res.status(201).json(item);
+  });
+
+  app.patch("/api/contacts/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const existing = storage.getContact(id);
+    if (!existing) return res.status(404).json({ error: "Not found" });
+    const updated = storage.updateContact(id, req.body);
+    res.json(updated);
+  });
+
+  app.delete("/api/contacts/:id", (req, res) => {
+    storage.deleteContact(parseInt(req.params.id));
+    res.status(204).send();
+  });
+
+  // Activities
+  app.get("/api/contacts/:id/activities", (req, res) => {
+    const contactId = parseInt(req.params.id);
+    const items = storage.getActivitiesByContact(contactId);
+    res.json(items);
+  });
+
+  app.post("/api/contacts/:id/activities", (req, res) => {
+    const contactId = parseInt(req.params.id);
+    const body = { ...req.body, contactId };
+    const parsed = insertActivitySchema.safeParse(body);
+    if (!parsed.success) return res.status(400).json({ error: parsed.error.message });
+    const item = storage.createActivity(parsed.data);
+    // Update last activity date on the contact
+    storage.updateContact(contactId, { lastActivityDate: body.date });
+    res.status(201).json(item);
+  });
+
+  // Seed contacts from JSON
+  app.post("/api/contacts/seed", (_req, res) => {
+    seedContacts();
+    res.json({ message: "Contacts seeded" });
   });
 
   // Seed endpoint
@@ -219,5 +277,66 @@ function seedDatabase() {
   }
 }
 
+function seedContacts() {
+  const count = storage.getContactsCount();
+  if (count > 0) return;
+
+  // Try multiple possible paths for the contacts JSON
+  const possiblePaths = [
+    path.resolve(process.cwd(), "../trialscreen-contacts.json"),
+    path.resolve(process.cwd(), "trialscreen-contacts.json"),
+    path.resolve("/home/user/workspace/trialscreen-contacts.json"),
+  ];
+
+  let rawData: string | null = null;
+  for (const p of possiblePaths) {
+    try {
+      rawData = fs.readFileSync(p, "utf-8");
+      break;
+    } catch {}
+  }
+
+  if (!rawData) {
+    console.error("Could not find trialscreen-contacts.json");
+    return;
+  }
+
+  const data = JSON.parse(rawData);
+  const contactsList = data.contacts || [];
+  const now = new Date().toISOString();
+
+  contactsList.forEach((c: any) => {
+    // Determine pipeline stage based on rules
+    let pipelineStage = "prospect";
+    if (c.segment === "Competitor") {
+      pipelineStage = "monitor";
+    } else if (c.relationship_status === "warm") {
+      pipelineStage = "engaged";
+    }
+    // cold + any priority and known contacts = prospect (default)
+
+    storage.createContact({
+      company: c.company,
+      segment: c.segment,
+      hqLocation: c.hq_location,
+      region: c.region,
+      keyTitles: JSON.stringify(c.key_titles),
+      companySize: c.company_size,
+      annualRdSpend: c.annual_rd_spend || null,
+      activeTrials: c.active_trials || null,
+      relationshipStatus: c.relationship_status,
+      priority: c.priority,
+      notes: c.notes || "",
+      pipelineStage,
+      existingConnection: c.existing_connection || false,
+      lastActivityDate: null,
+      createdAt: now,
+    });
+  });
+
+  console.log(`Seeded ${contactsList.length} contacts`);
+}
+
 // Auto-seed on import
 seedDatabase();
+seedContacts();

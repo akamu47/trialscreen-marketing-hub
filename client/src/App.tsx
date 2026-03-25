@@ -14,6 +14,7 @@ import ContentHub from "@/pages/content-hub";
 import Campaigns from "@/pages/campaigns";
 import Analytics from "@/pages/analytics";
 import Compliance from "@/pages/compliance";
+import Contacts from "@/pages/contacts";
 import NotFound from "@/pages/not-found";
 
 function AppRouter() {
@@ -23,6 +24,7 @@ function AppRouter() {
       <Route path="/content" component={ContentHub} />
       <Route path="/campaigns" component={Campaigns} />
       <Route path="/analytics" component={Analytics} />
+      <Route path="/contacts" component={Contacts} />
       <Route path="/compliance" component={Compliance} />
       <Route component={NotFound} />
     </Switch>

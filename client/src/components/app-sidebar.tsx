@@ -1,4 +1,4 @@
-import { LayoutDashboard, FileText, Megaphone, BarChart3, Shield, Settings, User } from "lucide-react";
+import { LayoutDashboard, FileText, Megaphone, BarChart3, Shield, Settings, User, Users } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import {
   Sidebar,
@@ -18,6 +18,7 @@ const navItems = [
   { title: "Content Hub", url: "/content", icon: FileText },
   { title: "Campaigns", url: "/campaigns", icon: Megaphone },
   { title: "Analytics", url: "/analytics", icon: BarChart3 },
+  { title: "Contacts", url: "/contacts", icon: Users },
   { title: "Compliance", url: "/compliance", icon: Shield },
 ];
 

@@ -1,0 +1,1783 @@
+{
+  "metadata": {
+    "compiled": "2025-01",
+    "total_contacts": 103,
+    "segments": [
+      "Pharma Sponsor",
+      "CRO",
+      "Site Network",
+      "Academic Institution",
+      "Patient Advocacy Group",
+      "Industry Body",
+      "Competitor"
+    ],
+    "sources": [
+      "LinkedIn Top 20 R&D Spending Biopharma 2024 (https://www.linkedin.com/pulse/top-20-rd-spending-biopharma-companies-2024-the-pharmashots-izmfc)",
+      "Fierce Biotech Top 10 Pharma R&D Budgets 2024 (https://www.fiercebiotech.com/special-reports/top-10-pharma-rd-budgets-2024)",
+      "Top Global CROs by Revenue - PBC Group (https://www.thepbcgroup.com/post/top-global-cros-by-revenue)",
+      "Top 50 CROs Worldwide 2025 - CCRPS (https://ccrps.org/clinical-research-blog/top-50-clinical-research-organizations-cros-worldwide-complete-2025-directory)",
+      "Proclinical Top 10 CROs 2025 (https://www.proclinical.com/blogs/2025-3/top-10-cros-to-watch-in-2025)",
+      "ACRP Membership (https://acrpnet.org/membership)",
+      "SCOPE Summit 2024 Attendee Profile (https://www.scopesummit.com/24/attendee-profile)",
+      "Grand View Research Clinical Trial Patient Recruitment Market (https://www.grandviewresearch.com/industry-analysis/clinical-trial-patient-recruitment-services-market-report)",
+      "Novotech Press Release 2025 (https://novotech-cro.com/news/novotech-welcomes-new-investment-gic-temasek-and-existing-investor-tpg-accelerate-global)",
+      "Ergomed ZoomInfo (https://www.zoominfo.com/c/ergomed-plc/24168896)",
+      "Worldwide Clinical Trials Growjo (https://growjo.com/company/Worldwide_Clinical_Trials)",
+      "Velocity Clinical Research Locations (https://velocityclinical.com/locations-by-state/)",
+      "Oxford Clinical Trial Units (https://www.medsci.ox.ac.uk/about-us/who-we-are/departments-networks-clinical-trial-units/clinical-trials)",
+      "Monash Clinical Trials (https://www.monash.edu/medicine/clinical-trials)",
+      "BIO International Convention 2024 (https://dev.bio.org/press-release/bio-international-convention-celebrates-another-successful-year-biotech-industrys)",
+      "DIA 2024 (https://www.diaglobal.org/en/flagship/dia-2024/about/conference)",
+      "2024 Clinical Trials Top Sponsors LinkedIn (https://www.linkedin.com/posts/bioknow-inc_biotech-biopharma-pharmaceuticals-activity-7333119335063842817-lFis)"
+    ]
+  },
+  "contacts": [
+    {
+      "company": "Merck & Co. (MSD)",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Rahway, NJ, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development",
+        "Head of Clinical Innovation"
+      ],
+      "company_size": "68,000+",
+      "annual_rd_spend": "$30.5B",
+      "active_trials": "1,000+",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "World's largest pharma R&D spender; #1 in completed trials in 2024. Known as MSD outside the US. Already appears in TrialScreen's LinkedIn network (MSD referenced in posts). Keytruda franchise drives massive oncology trial volume globally.",
+      "existing_connection": true
+    },
+    {
+      "company": "Roche",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Basel, Switzerland",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "100,000+",
+      "annual_rd_spend": "$15.7B",
+      "active_trials": "900+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "#2 global pharma by R&D spend. Strong oncology and neuroscience portfolio. Top 5 in completed trials 2024. Genentech is its US arm. Key target for REFER Premium given global trial scale.",
+      "existing_connection": false
+    },
+    {
+      "company": "Johnson & Johnson (Janssen)",
+      "segment": "Pharma Sponsor",
+      "hq_location": "New Brunswick, NJ, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development",
+        "Head of Clinical Innovation"
+      ],
+      "company_size": "131,900+",
+      "annual_rd_spend": "$15.1B",
+      "active_trials": "700+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Pharma arm (Janssen) runs trials across oncology, immunology, neuroscience. Among the highest trial volumes globally. Multiple clinical operations hubs in US, Belgium, and NJ.",
+      "existing_connection": false
+    },
+    {
+      "company": "AstraZeneca",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, UK",
+      "region": "UK",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "83,000+",
+      "annual_rd_spend": "$10.9B",
+      "active_trials": "700+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Led in successful trials in 2024. UK-headquartered - particularly relevant for TrialScreen's UK expansion. Named top enrolling pharma sponsor by AstraZeneca itself awarded Velocity as top partner Q1 2025.",
+      "existing_connection": false
+    },
+    {
+      "company": "Pfizer",
+      "segment": "Pharma Sponsor",
+      "hq_location": "New York, NY, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development",
+        "Head of Clinical Innovation"
+      ],
+      "company_size": "88,000+",
+      "annual_rd_spend": "$10.7B",
+      "active_trials": "800+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Largest pharma by absolute employee count. #2 in completed trials 2024. Acquired Seagen to build major oncology ADC pipeline \u2014 adds significant trial volume. High-value REFER Premium target.",
+      "existing_connection": false
+    },
+    {
+      "company": "Novartis",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Basel, Switzerland",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "78,000+",
+      "annual_rd_spend": "$11.5B",
+      "active_trials": "500+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Major Swiss pharma with global trial operations across oncology, cardiovascular, and neuroscience. US operational hub in East Hanover, NJ. Top 5 in successful trial completions 2024.",
+      "existing_connection": false
+    },
+    {
+      "company": "AbbVie",
+      "segment": "Pharma Sponsor",
+      "hq_location": "North Chicago, IL, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "50,000+",
+      "annual_rd_spend": "$7.7B",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Post-Humira diversification driving immunology, oncology, and neuroscience trial expansion. Highly active in patient recruitment innovation. Largest market cap pharma in 2024.",
+      "existing_connection": false
+    },
+    {
+      "company": "Eli Lilly",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Indianapolis, IN, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "43,000+",
+      "annual_rd_spend": "$9.3B",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Explosive growth driven by obesity/diabetes (Mounjaro, Zepbound) and oncology pipeline. Added notable trial volume in 2024 for GLP-1 indications. One of the largest market cap companies globally in 2024.",
+      "existing_connection": false
+    },
+    {
+      "company": "Bristol Myers Squibb (BMS)",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Princeton, NJ, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "34,000+",
+      "annual_rd_spend": "$9.3B",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Top 5 in completed trials 2024. Opdivo/Keytruda competitor driving massive oncology trial volume. High-value target for TrialScreen given immuno-oncology pipeline depth.",
+      "existing_connection": false
+    },
+    {
+      "company": "GSK (GlaxoSmithKline)",
+      "segment": "Pharma Sponsor",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development",
+        "Head of Clinical Innovation"
+      ],
+      "company_size": "70,000+",
+      "annual_rd_spend": "$7.4B",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "UK-headquartered; strong respiratory, oncology, vaccines pipeline. Made notable gains in successful trial completions in 2024. Key target for UK relationship-building given co-location with TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Sanofi",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Paris, France",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "86,000+",
+      "annual_rd_spend": "$7.4B",
+      "active_trials": "350+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "European pharma giant; Dupixent (dupilumab) franchise driving immunology and inflammatory disease trials. US R&D hub in Cambridge, MA. Strong APAC trial activity.",
+      "existing_connection": false
+    },
+    {
+      "company": "Novo Nordisk",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Bagsvaerd, Denmark",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "65,000+",
+      "annual_rd_spend": "$5.1B",
+      "active_trials": "200+",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Appears in TrialScreen's LinkedIn network. GLP-1 franchise (Ozempic, Wegovy) and expanding cardiovascular/renal pipeline driving massive recruitment need. Global obesity trial leader.",
+      "existing_connection": true
+    },
+    {
+      "company": "Amgen",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Thousand Oaks, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "24,000+",
+      "annual_rd_spend": "$4.8B",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Top US biotech/pharma. MariTide obesity drug Phase 2 data released 2024. Strong oncology and cardiovascular portfolio. Acquired Horizon Therapeutics (rare disease) \u2014 expands trial pipeline significantly.",
+      "existing_connection": false
+    },
+    {
+      "company": "Gilead Sciences",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Foster City, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "17,000+",
+      "annual_rd_spend": "$5.7B",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Major HIV/oncology portfolio. Lenacapavir HIV PrEP (PURPOSE trials) showed 100% efficacy in 2024 \u2014 major trial program. Trodelvy ADC driving oncology trial expansion.",
+      "existing_connection": false
+    },
+    {
+      "company": "Bayer",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Leverkusen, Germany",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "100,000+",
+      "annual_rd_spend": "$6.1B",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "German pharma giant with strong cardiovascular, oncology, and women's health trial programs. Significant US R&D presence in Whippany, NJ. Active in global decentralized trials.",
+      "existing_connection": false
+    },
+    {
+      "company": "Takeda",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Tokyo, Japan",
+      "region": "APAC",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "49,000+",
+      "annual_rd_spend": "$4.9B",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Japan's largest pharma, with global operations. Strong rare disease and oncology pipeline. APAC anchor \u2014 relevant for TrialScreen's APAC expansion. Significant GI, neuroscience, oncology trial volume.",
+      "existing_connection": false
+    },
+    {
+      "company": "Boehringer Ingelheim",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Ingelheim am Rhein, Germany",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "53,500+",
+      "annual_rd_spend": "$6.4B",
+      "active_trials": "250+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Privately held German pharma. Strong respiratory, cardiovascular, immunology pipeline. Significant ongoing COPD, HF, and metabolic disease trials. No stock market pressure \u2014 long-term R&D commitment.",
+      "existing_connection": false
+    },
+    {
+      "company": "Regeneron Pharmaceuticals",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Tarrytown, NY, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "13,450+",
+      "annual_rd_spend": "$4.4B",
+      "active_trials": "150+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "US biotech leader. Dupixent (co-developed with Sanofi) marketed for 8+ autoimmune conditions. Gene therapy and fianlimab (LAG-3) pipeline expanding trial volume. Strong oncology growth.",
+      "existing_connection": false
+    },
+    {
+      "company": "Biogen",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "9,000+",
+      "annual_rd_spend": "$2.5B",
+      "active_trials": "100+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Neuroscience-focused biotech. Lecanemab (Leqembi) Alzheimer's approval in 2023 created significant ongoing trial pipeline. ALS, MS, and neurodegeneration are core areas \u2014 all have major patient recruitment challenges.",
+      "existing_connection": false
+    },
+    {
+      "company": "Vertex Pharmaceuticals",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Boston, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "5,400+",
+      "annual_rd_spend": "$3.2B",
+      "active_trials": "100+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "CF franchise leader (Trikafta). Diversifying into pain, kidney disease, sickle cell, and type 1 diabetes via new modalities. Casgevy gene therapy co-developed with CRISPR Therapeutics \u2014 rare disease trial expansion.",
+      "existing_connection": false
+    },
+    {
+      "company": "Moderna",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development",
+        "Head of Clinical Innovation"
+      ],
+      "company_size": "5,600+",
+      "annual_rd_spend": "$4.8B",
+      "active_trials": "50+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "mRNA platform leader post-COVID. Personalized cancer vaccine (mRNA-4157/V940) in Phase 3 with Merck. RSV, flu/COVID combo, and metabolic disease programs expand trial needs. Digital-forward \u2014 achieved 80% minority enrollment in vaccine trials via digital platforms.",
+      "existing_connection": false
+    },
+    {
+      "company": "Alnylam Pharmaceuticals",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "2,500+",
+      "annual_rd_spend": "$1.5B",
+      "active_trials": "30+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "RNAi therapeutics pioneer. 5 approved drugs; 25+ programs in clinical development by end 2025. HELIOS-B vutrisiran TTR data was landmark in 2024. Rare disease focus = challenging patient recruitment = high TrialScreen value.",
+      "existing_connection": false
+    },
+    {
+      "company": "Incyte Corporation",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Wilmington, DE, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "5,000+",
+      "annual_rd_spend": "$1.8B",
+      "active_trials": "60+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Hematology and oncology specialist. Jakafi (ruxolitinib) blockbuster driving GvHD/myelofibrosis trials. Active pipeline in oncology and inflammatory conditions. Mid-cap biotech with dedicated clinical ops teams.",
+      "existing_connection": false
+    },
+    {
+      "company": "BioNTech",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Mainz, Germany",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "5,000+",
+      "annual_rd_spend": "$2.0B",
+      "active_trials": "50+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "COVID vaccine pioneer pivoting to oncology mRNA therapeutics. 12+ cancer treatments in trials. ONC-392 (Phase 3) and NT323 (breast cancer) in late-stage. Growing patient recruitment complexity in oncology.",
+      "existing_connection": false
+    },
+    {
+      "company": "Seagen (now Pfizer Oncology)",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Bothell, WA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment"
+      ],
+      "company_size": "3,000+",
+      "annual_rd_spend": "$1.2B",
+      "active_trials": "30+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Acquired by Pfizer for $43B in 2023. ADC (antibody-drug conjugate) platform \u2014 4 marketed ADCs. Clinical ops teams may operate semi-independently within Pfizer. Note as Pfizer Oncology contact.",
+      "existing_connection": false
+    },
+    {
+      "company": "Jazz Pharmaceuticals",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Dublin, Ireland",
+      "region": "UK",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "6,000+",
+      "annual_rd_spend": "$600M",
+      "active_trials": "20+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Irish-headquartered pharma. FDA approvals in 2024 (Ziihera for biliary tract cancer). Strong oncology/hematology and CNS/sleep medicine portfolios. Relevant for UK/EU trial operations.",
+      "existing_connection": false
+    },
+    {
+      "company": "Daiichi Sankyo",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Tokyo, Japan",
+      "region": "APAC",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "17,000+",
+      "annual_rd_spend": "$2.5B",
+      "active_trials": "80+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Japanese pharma. Enhertu (trastuzumab deruxtecan) ADC partnership with AstraZeneca \u2014 massive global oncology trial program. APAC anchor for TrialScreen. Leading ADC clinical trial volume globally.",
+      "existing_connection": false
+    },
+    {
+      "company": "Eisai",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Tokyo, Japan",
+      "region": "APAC",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "12,000+",
+      "annual_rd_spend": "$1.5B",
+      "active_trials": "40+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Japanese pharma. Leqembi (lecanemab) Alzheimer's drug with Biogen generating ongoing open-label extension studies. Alzheimer's patient recruitment is among the most challenging \u2014 direct TrialScreen value proposition.",
+      "existing_connection": false
+    },
+    {
+      "company": "UCB",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Brussels, Belgium",
+      "region": "UK",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "10,000+",
+      "annual_rd_spend": "$1.8B",
+      "active_trials": "60+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Belgian specialty pharma focused on neurology and immunology. Bimzelx (bimekizumab) approvals driving IL-17 trials. Strong EU/UK presence. High-value target for TrialScreen's UK market.",
+      "existing_connection": false
+    },
+    {
+      "company": "Astellas Pharma",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Tokyo, Japan",
+      "region": "APAC",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "14,000+",
+      "annual_rd_spend": "$2.2B",
+      "active_trials": "80+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Japanese pharma with US headquarters in Northbrook, IL. Strong oncology (Padcev, Xospata) and urology pipelines. APAC-anchor and US mid-tier target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "IQVIA",
+      "segment": "CRO",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director",
+        "VP Clinical Operations"
+      ],
+      "company_size": "88,000+",
+      "annual_revenue": "$15.4B",
+      "active_trials": "10,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "World's largest CRO by revenue ($15.4B FY2024). Operates in 100+ countries. Technology & Analytics Solutions a major revenue pillar. Patient recruitment is embedded in their R&D Solutions division. Strategic partnership with IQVIA could unlock massive trial referral volume for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Thermo Fisher Scientific / PPD",
+      "segment": "CRO",
+      "hq_location": "Waltham, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "125,000+",
+      "annual_revenue": "$42.9B (TF total) / ~$4.7B (PPD)",
+      "active_trials": "5,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "PPD acquired by Thermo Fisher for $17.4B in 2021. PPD division is a leading full-service CRO. Geographic distribution: US $22.5B, Europe $10.9B, APAC $8B. Key REFER partner opportunity.",
+      "existing_connection": false
+    },
+    {
+      "company": "ICON plc",
+      "segment": "CRO",
+      "hq_location": "Dublin, Ireland",
+      "region": "UK",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "41,900+",
+      "annual_revenue": "$8.3B",
+      "active_trials": "5,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Second-largest CRO globally ($8.28B FY2024 revenue). Acquired PRA Health Sciences in 2021. Operates in 53 countries / 93 countries via remote staff. 760+ oncology studies to date. Ireland HQ makes it key for UK and EU engagement. Highly relevant TrialScreen partner.",
+      "existing_connection": false
+    },
+    {
+      "company": "Labcorp / Covance",
+      "segment": "CRO",
+      "hq_location": "Burlington, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "60,000+",
+      "annual_revenue": "$14B+ (Labcorp total)",
+      "active_trials": "5,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Covance Drug Development is the CRO arm of Labcorp. Spun off Fortrea in 2023. End-to-end drug development services from early-stage research to regulatory approval. Major patient recruitment outsourcing partner opportunity.",
+      "existing_connection": false
+    },
+    {
+      "company": "Parexel International",
+      "segment": "CRO",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "21,000+",
+      "annual_revenue": "$3.8B",
+      "active_trials": "3,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "One of the largest CROs globally. Private since 2017 (Pamplona Capital). Strong late-phase and full-service capabilities. Notable GSK, AstraZeneca client relationships. Strategic REFER partner opportunity.",
+      "existing_connection": false
+    },
+    {
+      "company": "Syneos Health",
+      "segment": "CRO",
+      "hq_location": "Morrisville, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "24,000+",
+      "annual_revenue": "$5.4B",
+      "active_trials": "3,000+",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Ashley Moultrie (Syneos Health) co-authored content with Elisa Cascade (TrialScreen) \u2014 confirmed warm relationship. Taken private in August 2023 ($7B deal). Biopharmaceutical solutions org with clinical (75% rev) and commercial (25% rev) divisions. Key existing partner to nurture.",
+      "existing_connection": true
+    },
+    {
+      "company": "Medpace",
+      "segment": "CRO",
+      "hq_location": "Cincinnati, OH, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "5,900+",
+      "annual_revenue": "$2.1B",
+      "active_trials": "500+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Mid-sized CRO growing rapidly (11.8% revenue growth FY2024). Specialized in oncology, rare disease, and metabolic disorders. 44 countries. Strong Roche and Gilead client base. Niche positioning aligns well with TrialScreen rare disease capabilities.",
+      "existing_connection": false
+    },
+    {
+      "company": "Charles River Laboratories",
+      "segment": "CRO",
+      "hq_location": "Wilmington, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "23,000+",
+      "annual_revenue": "$3.9B",
+      "active_trials": "1,000+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Strong preclinical and early-phase CRO. Listed as top CRO in clinical trials market reports. While primarily preclinical, early-phase clinical operations create patient recruitment needs. Pharmaceutical client list includes all major pharma companies.",
+      "existing_connection": false
+    },
+    {
+      "company": "Fortrea",
+      "segment": "CRO",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "7,000+",
+      "annual_revenue": "$3.1B",
+      "active_trials": "1,000+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Spun out from Labcorp's CRO segment in 2023. Returned to Covance roots. Full-service Phase I-IV clinical services. Divested Endpoint Clinical and Fortrea Patient Access. Growing independently \u2014 active CRO procurement cycles in progress.",
+      "existing_connection": false
+    },
+    {
+      "company": "Novotech",
+      "segment": "CRO",
+      "hq_location": "Sydney, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "3,000+",
+      "annual_revenue": "$400M",
+      "active_trials": "6,000+ (lifetime)",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Asia-Pacific's leading CRO. 3,000 employees; investment from GIC, Temasek, and TPG in 2025. Grown from 300-person (2017) to 3,000-person global organization. APAC expertise is direct complement to TrialScreen's APAC expansion. Highest-priority APAC CRO target.",
+      "existing_connection": false
+    },
+    {
+      "company": "Worldwide Clinical Trials",
+      "segment": "CRO",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "4,170+",
+      "annual_revenue": "$535-635M",
+      "active_trials": "500+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Mid-sized, flexible full-service CRO with 30+ years experience. Strong Pfizer and J&J client relationships. 4,170 employees. Appeared in Grand View Research patient recruitment market report as key player. Good mid-tier CRO partner target.",
+      "existing_connection": false
+    },
+    {
+      "company": "Ergomed",
+      "segment": "CRO",
+      "hq_location": "Guildford, Surrey, UK",
+      "region": "UK",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "1,800+",
+      "annual_revenue": "$380M",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "UK-headquartered specialty CRO. Focused on rare disease and oncology subsets. PrimeVigilance (pharmacovigilance arm) adds breadth. UK HQ aligns perfectly with TrialScreen's UK market. Growing 22%+ annually.",
+      "existing_connection": false
+    },
+    {
+      "company": "Quanticate",
+      "segment": "CRO",
+      "hq_location": "Hitchin, Hertfordshire, UK",
+      "region": "UK",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Business Development Director",
+        "Head of Biostatistics"
+      ],
+      "company_size": "500+",
+      "annual_revenue": "$80M",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "UK-headquartered statistics and data management CRO. Specializes in biometrics/biostatistics \u2014 complementary to recruitment needs. UK location makes it a natural UK-market touchpoint for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "WCG Clinical",
+      "segment": "CRO",
+      "hq_location": "Princeton, NJ, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Head of Digital Innovation",
+        "Business Development Director"
+      ],
+      "company_size": "5,000+",
+      "annual_revenue": "$500M",
+      "active_trials": "2,000+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Global leader in IRB services and clinical research solutions. Published 2024 Report on Top Issues Impacting Clinical Research Sites. IRB + site support services position WCG at the intersection of sites and sponsors \u2014 strong TrialScreen partnership opportunity.",
+      "existing_connection": false
+    },
+    {
+      "company": "George Clinical",
+      "segment": "CRO",
+      "hq_location": "Sydney, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "VP Patient Recruitment",
+        "Business Development Director",
+        "Head of Clinical Operations"
+      ],
+      "company_size": "500+",
+      "annual_revenue": "$100M",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "APAC-focused CRO with academic roots (The George Institute for Global Health). Strong cardiovascular, stroke, and chronic disease expertise. Novartis and GSK client base. Key APAC CRO target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Velocity Clinical Research",
+      "segment": "Site Network",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "Chief Executive Officer",
+        "VP Site Operations",
+        "Head of Research Operations",
+        "Site Director"
+      ],
+      "company_size": "2,000+",
+      "sites": "70+ sites across US and Europe",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "One of the largest US site networks. 70+ sites across US and Europe. Recognized by AstraZeneca as top enrolling site network Q1 2025. FibroScan, PBMC, in-house lab capabilities. Supported 9 FDA-approved products in 2024. Direct integration opportunity for TrialScreen patient referral.",
+      "existing_connection": false
+    },
+    {
+      "company": "Headlands Research",
+      "segment": "Site Network",
+      "hq_location": "San Francisco, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "Chief Executive Officer",
+        "VP Site Operations",
+        "Head of Research Operations"
+      ],
+      "company_size": "500+",
+      "sites": "15+ sites across US",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "US site network including Artemis Institute sites. Focus on diverse patient populations. Growing site network actively seeking new site partners. Embedded and dedicated clinical research sites across California and other states.",
+      "existing_connection": false
+    },
+    {
+      "company": "Accel Research Sites",
+      "segment": "Site Network",
+      "hq_location": "DeLand, FL, USA",
+      "region": "US",
+      "key_titles": [
+        "Chief Executive Officer",
+        "VP Site Operations",
+        "Head of Research Operations"
+      ],
+      "company_size": "300+",
+      "sites": "8+ sites in Florida",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Florida-based site network with dedicated clinical research sites. Active across multiple therapeutic areas. Florida patient population offers strong demographic diversity for TrialScreen referrals.",
+      "existing_connection": false
+    },
+    {
+      "company": "Alliance Clinical Network",
+      "segment": "Site Network",
+      "hq_location": "Dallas, TX, USA",
+      "region": "US",
+      "key_titles": [
+        "Chief Executive Officer",
+        "VP Site Operations",
+        "Head of Research Operations"
+      ],
+      "company_size": "300+",
+      "sites": "Multiple sites in Texas, California, and Nevada",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Fully integrated, wholly owned site network. 280,000+ prescreened participants in proprietary database. Hospital-affiliated sites. Centralized management and SOPs. Diverse participant populations \u2014 strong alignment with TrialScreen's diversity mission.",
+      "existing_connection": false
+    },
+    {
+      "company": "Benchmark Research",
+      "segment": "Site Network",
+      "hq_location": "Fort Worth, TX, USA",
+      "region": "US",
+      "key_titles": [
+        "Site Director",
+        "Head of Research Operations",
+        "VP Clinical Operations"
+      ],
+      "company_size": "200+",
+      "sites": "Multiple sites in Texas and Louisiana",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Texas-based dedicated clinical research organization. Multi-therapeutic area expertise. Active Phase 1-4 trial sites. Relevant for TrialScreen US market penetration in the South/Southwest.",
+      "existing_connection": false
+    },
+    {
+      "company": "Clinical Trials of Texas (CTT)",
+      "segment": "Site Network",
+      "hq_location": "San Antonio, TX, USA",
+      "region": "US",
+      "key_titles": [
+        "Site Director",
+        "Head of Research Operations"
+      ],
+      "company_size": "100+",
+      "sites": "3+ sites in Texas",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "San Antonio-based clinical research network. Active in Phase 1-4 trials across diverse therapeutic areas. Strong Hispanic patient population access \u2014 highly relevant for TrialScreen's diversity and inclusion focus.",
+      "existing_connection": false
+    },
+    {
+      "company": "NIHR Clinical Research Network (UK)",
+      "segment": "Site Network",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Network Director",
+        "Head of Research Delivery",
+        "Business Development Director"
+      ],
+      "company_size": "10,000+",
+      "sites": "28+ NIHR Clinical Research Facilities across England",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "UK's national clinical research infrastructure. 28 NIHR CRFs awarded \u00a3161M (2022-2027). Covers all major NHS hospitals. Critical gateway to UK NHS research sites for TrialScreen's UK expansion. Research Delivery Network (RDN) operates across England.",
+      "existing_connection": false
+    },
+    {
+      "company": "Society for Clinical Research Sites (SCRS)",
+      "segment": "Site Network",
+      "hq_location": "McLean, VA, USA",
+      "region": "US",
+      "key_titles": [
+        "Executive Director",
+        "Membership Director",
+        "Head of Sponsor Relations"
+      ],
+      "company_size": "500+ member organizations",
+      "sites": "Global site membership",
+      "relationship_status": "known",
+      "priority": 1,
+      "notes": "Appears as 'similar company' on TrialScreen's LinkedIn page \u2014 confirmed industry awareness. Only global trade org representing clinical research sites. Global Impact Partner program allows TrialScreen vendor positioning. Members include sites, site networks, and hospitals globally. Critical partnership for site channel distribution.",
+      "existing_connection": false
+    },
+    {
+      "company": "Monash Health",
+      "segment": "Site Network",
+      "hq_location": "Melbourne, Victoria, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "Director of Clinical Trials",
+        "Head of Research Operations",
+        "Site Director"
+      ],
+      "company_size": "19,000+",
+      "sites": "Multiple sites in South East Melbourne",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Already connected to TrialScreen (noted in task). Australia's largest health service; 7,000+ beds, catchment of 3.5M people (15% of Australia). 1 in 5 Australian clinical trials conducted at Alfred precinct (Monash). APAC trial delivery hub \u2014 key for TrialScreen APAC expansion.",
+      "existing_connection": true
+    },
+    {
+      "company": "King's Health Partners Clinical Trials Office",
+      "segment": "Site Network",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials",
+        "Head of Research Operations",
+        "Commercial Trials Lead"
+      ],
+      "company_size": "3,000+ researchers",
+      "sites": "KCL, Guy's & St Thomas', King's College Hospital, South London & Maudsley NHS",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "UKCRC-accredited unit; sponsors clinical trials across 4 major London hospitals. Commercial sponsor gateway for pharma access to London NHS sites. Streamlined setup and financial management. Strategic UK site partnership for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Memorial Sloan Kettering Cancer Center",
+      "segment": "Academic Institution",
+      "hq_location": "New York, NY, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "17,000+",
+      "active_trials": "500+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Top specialty cancer hospital in US. Intensive consent flows, imaging endpoints, high oncology trial volume. Over 500 active trials at any time. Key target for TrialScreen oncology patient recruitment solution.",
+      "existing_connection": false
+    },
+    {
+      "company": "Johns Hopkins Medicine",
+      "segment": "Academic Institution",
+      "hq_location": "Baltimore, MD, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "40,000+",
+      "active_trials": "400+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Top US academic medical center. First-in-human trials; neurology, oncology, and infectious disease. Tight safety narratives and consent precision required. Major trial volume across all phases.",
+      "existing_connection": false
+    },
+    {
+      "company": "Mayo Clinic",
+      "segment": "Academic Institution",
+      "hq_location": "Rochester, MN, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "70,000+",
+      "active_trials": "8,000+ (ongoing portfolio)",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Multi-specialty trial leader with sites in MN, AZ, and FL. High protocol diversity across oncology, cardiovascular, and rare disease. Among the largest academic trial programs in the US. Critical target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Cleveland Clinic",
+      "segment": "Academic Institution",
+      "hq_location": "Cleveland, OH, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "60,000+",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Top cardiovascular and neurological research center globally. Complex device/pharma trial mix. Strong imaging and monitoring capabilities. International reach (Abu Dhabi, London).",
+      "existing_connection": false
+    },
+    {
+      "company": "Massachusetts General Hospital / Mass General Brigham",
+      "segment": "Academic Institution",
+      "hq_location": "Boston, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "80,000+",
+      "active_trials": "1,000+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Harvard-affiliated; one of the most active trial networks in the US. Academic and oncology focus. Heavy monitoring cadence. Most recently activated Precision BioSciences ELIMINATE-B Phase 1 (2025). Key TrialScreen target.",
+      "existing_connection": false
+    },
+    {
+      "company": "Duke Health",
+      "segment": "Academic Institution",
+      "hq_location": "Durham, NC, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "40,000+",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Top cardiovascular and pulmonary clinical research center. Close CRA partnership culture. Active clinical trial presence in oncology and cardiovascular. Duke Clinical Research Institute (DCRI) is one of the world's largest academic CROs.",
+      "existing_connection": false
+    },
+    {
+      "company": "MD Anderson Cancer Center",
+      "segment": "Academic Institution",
+      "hq_location": "Houston, TX, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "20,000+",
+      "active_trials": "1,300+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Rated #1 cancer center for 10 consecutive years (US News). High-stakes oncology SAE narratives. 1,300+ active trials. Cell and gene therapy \u2014 complex patient recruitment. Top TrialScreen target for oncology segment.",
+      "existing_connection": false
+    },
+    {
+      "company": "UCLA Health",
+      "segment": "Academic Institution",
+      "hq_location": "Los Angeles, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "30,000+",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Top US academic medical center. Oncology and transplant focus. Diverse LA patient population \u2014 strong diversity trial recruitment fit. Chain-of-custody and complex imaging capabilities.",
+      "existing_connection": false
+    },
+    {
+      "company": "Stanford Health Care",
+      "segment": "Academic Institution",
+      "hq_location": "Stanford, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "15,000+",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Top genomics and device clinical research center. Device endpoints and precision medicine emphasis. Strong tech-adjacent culture \u2014 receptive to digital recruitment solutions like TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "UCSF Health",
+      "segment": "Academic Institution",
+      "hq_location": "San Francisco, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "28,000+",
+      "active_trials": "300+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Leading immunology and neuroscience research center. Strong translational research ties. Active across oncology, immunology, and CNS. Benioff Children's Hospital arm adds pediatric trial volume.",
+      "existing_connection": false
+    },
+    {
+      "company": "University College London (UCL)",
+      "segment": "Academic Institution",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "15,000+ staff",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "UK's largest university by research activity. UCL Clinical Trials Unit (MRC CTU at UCL) is one of the UK's leading academic CTUs. NIHR-funded. Cancer, HIV, and infectious disease focus. Prime UK academic target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "University of Oxford",
+      "segment": "Academic Institution",
+      "hq_location": "Oxford, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "VP Research Administration"
+      ],
+      "company_size": "10,000+ staff",
+      "active_trials": "1,000+ (of which ~150 interventional in EU; 350+ outside EU)",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Oxford sponsors ~1,000 academic clinical research studies; 5 UKCRC-registered Clinical Trials Units. Centre for Tropical Medicine adds global trial reach. RECOVERY trial (COVID) demonstrated Oxford's high-volume trial capacity. Strategic UK academic target.",
+      "existing_connection": false
+    },
+    {
+      "company": "King's College London",
+      "segment": "Academic Institution",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "8,000+ staff",
+      "active_trials": "150+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "UKCRC-accredited King's Clinical Trials Unit (KCTU). Part of King's Health Partners consortium. Primarily NIHR-funded multicentre trials. Commercial team supports pharma sponsor access. Relevant for TrialScreen UK market.",
+      "existing_connection": false
+    },
+    {
+      "company": "University of Cambridge",
+      "segment": "Academic Institution",
+      "hq_location": "Cambridge, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "12,000+ staff",
+      "active_trials": "150+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Cambridge Clinical Trials Unit (CCTU) \u2014 science-led NIHR UKCRC registered academic CTU. Broad spectrum of interventional trials. Cambridge University Hospitals NHS Trust co-location. UK academic target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Imperial College London",
+      "segment": "Academic Institution",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "10,000+ staff",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "NIHR Imperial Clinical Research Facility (NIHR Imperial CRF). Strong cardiovascular, infectious disease, and immunology programs. Imperial College Healthcare NHS Trust partner. UK AMIIC facility used in FORTIFY international trial. Key London academic target.",
+      "existing_connection": false
+    },
+    {
+      "company": "University of Melbourne",
+      "segment": "Academic Institution",
+      "hq_location": "Melbourne, Victoria, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "10,000+ staff",
+      "active_trials": "200+",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Australia's top-ranked research university. Peter MacCallum Cancer Centre partnership for oncology. Australian Clinical Trials Alliance (ACTA) member. Strong global cancer trial consortia involvement. Key APAC academic target for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Monash University",
+      "segment": "Academic Institution",
+      "hq_location": "Melbourne, Victoria, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research",
+        "Director of Clinical Research"
+      ],
+      "company_size": "9,000+ staff",
+      "active_trials": "300+ (accounts for ~25% of all Australian clinical trial activity)",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Connected to TrialScreen via Monash Health relationship. Top 50 global university; Australia's largest. Monash-led trials account for ~25% of Australian clinical trial activity. 5 affiliated health services, 7,000+ hospital beds, 3,000 GP network. Monash-ClinChoice partnership announced 2026. Highest-priority APAC academic target.",
+      "existing_connection": true
+    },
+    {
+      "company": "University of Sydney",
+      "segment": "Academic Institution",
+      "hq_location": "Sydney, NSW, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "8,000+ staff",
+      "active_trials": "150+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Major Australian research university. NHMRC Clinical Trials Centre (CTC) is one of Australia's leading academic CTUs \u2014 cardiovascular, oncology, and respiratory focus. George Institute partner. Key APAC academic target.",
+      "existing_connection": false
+    },
+    {
+      "company": "National University of Singapore (NUS) / Duke-NUS",
+      "segment": "Academic Institution",
+      "hq_location": "Singapore",
+      "region": "APAC",
+      "key_titles": [
+        "Director of Clinical Trials Office",
+        "Associate Dean for Research"
+      ],
+      "company_size": "7,000+ staff",
+      "active_trials": "100+",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Singapore's leading research institution. Duke-NUS Medical School provides translational medicine backbone. Core partner in Asia-specific vaccine trials (dengue, COVID). Partners with Pfizer, Novartis, GSK under global protocols. Singapore regulatory speed (6-8 weeks) is key APAC advantage.",
+      "existing_connection": false
+    },
+    {
+      "company": "National Organization for Rare Disorders (NORD)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Washington, DC, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement",
+        "VP Programs"
+      ],
+      "company_size": "50+ staff",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Leading US rare disease patient advocacy umbrella organization. 900+ attendees at 2024 NORD Breakthrough Summit. 30+ advocacy organizations in rare cancer coalition. Advocating for greater decentralization and digital health in clinical trials. Direct alignment with TrialScreen's rare disease capabilities.",
+      "existing_connection": false
+    },
+    {
+      "company": "Alzheimer's Association",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Chicago, IL, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement",
+        "VP Clinical Trials"
+      ],
+      "company_size": "600+ staff",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Largest Alzheimer's PAG. Manages TrialMatch platform (competitive intelligence). Alzheimer's trial recruitment is among the hardest \u2014 high screen failure rates. Leqembi approval creating massive demand for prevention trial participants. Key TrialScreen value proposition alignment.",
+      "existing_connection": false
+    },
+    {
+      "company": "American Cancer Society (ACS)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Atlanta, GA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement",
+        "VP Clinical Trials"
+      ],
+      "company_size": "3,000+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Largest cancer PAG globally by revenue. ACS CAN (advocacy arm) and clinical trial awareness campaigns. Strong patient network for oncology recruitment. ACS and ASCO partnership on trial diversity. Partnership opportunity for patient awareness campaigns.",
+      "existing_connection": false
+    },
+    {
+      "company": "JDRF (Juvenile Diabetes Research Foundation)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "New York, NY, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "200+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Type 1 diabetes advocacy. Active in clinical trial partnerships for immune therapies. Teplizumab (first T1D disease-modifying drug, 2022) was driven partly through JDRF's T1D Exchange registry. Registry-based recruitment model is complementary to TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Cystic Fibrosis Foundation (CFF)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Bethesda, MD, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement",
+        "VP Drug Development"
+      ],
+      "company_size": "200+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "CFF is a leading model for PAG-driven drug development \u2014 funded Vertex's Trikafta via venture philanthropy. Maintains CF patient registry and trial network. High potential TrialScreen partner for CF-adjacent rare disease trials.",
+      "existing_connection": false
+    },
+    {
+      "company": "Lupus Foundation of America",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Washington, DC, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "50+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "National lupus advocacy organization. Lupus clinical trials have significant patient recruitment challenges \u2014 autoimmune disease, primarily affecting women of color. Diversity in recruitment is a critical goal. TrialScreen's targeted platform has direct value here.",
+      "existing_connection": false
+    },
+    {
+      "company": "Lung Cancer Alliance / LUNGevity Foundation",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Washington, DC, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "50+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "LUNGevity Foundation (merged with Lung Cancer Alliance) is the largest lung cancer PAG in the US. Active in clinical trial awareness. Highly active oncology trial landscape \u2014 KRAS, EGFR, PD-1 trials all require specialist patient recruitment.",
+      "existing_connection": false
+    },
+    {
+      "company": "National Alliance on Mental Illness (NAMI)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Arlington, VA, USA",
+      "region": "US",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "100+ staff",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Largest US mental health PAG. CNS and psychiatry trials face unique recruitment challenges \u2014 stigma, complex eligibility. Growing pipeline in depression, schizophrenia (KarXT approved 2024), and bipolar disorder. TrialScreen CNS capabilities relevant here.",
+      "existing_connection": false
+    },
+    {
+      "company": "Scleroderma Australia",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "Melbourne, Victoria, Australia",
+      "region": "APAC",
+      "key_titles": [
+        "Executive Director",
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "20+ staff",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Already connected to TrialScreen \u2014 provided a testimonial (noted in task). APAC patient advocacy group for systemic sclerosis (scleroderma). Rare autoimmune disease with significant unmet trial recruitment need. Pilot relationship for APAC PAG engagement strategy.",
+      "existing_connection": true
+    },
+    {
+      "company": "Multiple Sclerosis International Federation (MSIF)",
+      "segment": "Patient Advocacy Group",
+      "hq_location": "London, UK",
+      "region": "UK",
+      "key_titles": [
+        "Director of Research",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "30+ staff",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Global MS PAG federation. MS trials are a major CRO and pharma focus area (BTK inhibitors, anti-CD20 agents). Significant UK membership base \u2014 aligned with TrialScreen UK market expansion. Global reach across APAC and US chapters too.",
+      "existing_connection": false
+    },
+    {
+      "company": "ACRP (Association of Clinical Research Professionals)",
+      "segment": "Industry Body",
+      "hq_location": "Alexandria, VA, USA",
+      "region": "US",
+      "key_titles": [
+        "Executive Director",
+        "Conference Director",
+        "Membership Director"
+      ],
+      "company_size": "20,000+ members",
+      "relationship_status": "warm",
+      "priority": 1,
+      "notes": "Already connected to TrialScreen (noted in task). Only non-profit solely dedicated to clinical research professionals. 20,000+ members globally. ACRP Annual Conference is a top industry event. Conference sponsorship, speaking, and exhibit opportunities provide direct access to clinical ops decision-makers.",
+      "existing_connection": true
+    },
+    {
+      "company": "Drug Information Association (DIA)",
+      "segment": "Industry Body",
+      "hq_location": "Washington, DC, USA",
+      "region": "US",
+      "key_titles": [
+        "Executive Director",
+        "Conference Director",
+        "Membership Director"
+      ],
+      "company_size": "Professionals from 80+ countries",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "Global member organization for life sciences professionals. DIA 2024 Global Annual Meeting (60th anniversary) was held June 16-20. Brings together industry, regulators, academics, and patients. DIA membership provides access to regulatory and clinical development decision-makers across all major pharma companies.",
+      "existing_connection": false
+    },
+    {
+      "company": "SCOPE Summit (Summit for Clinical Ops Executives)",
+      "segment": "Industry Body",
+      "hq_location": "Orlando, FL, USA (annual event)",
+      "region": "US",
+      "key_titles": [
+        "Conference Director",
+        "Sponsorship Director",
+        "Head of Content"
+      ],
+      "company_size": "4,000+ attendees / 1,200+ organizations",
+      "relationship_status": "cold",
+      "priority": 1,
+      "notes": "SCOPE Summit 2024: 4,000 participants, 275 exhibits, 1,200 organizations, 29 countries. 58% of participants hold decision-making roles. Premier event for clinical operations executives \u2014 VP Clinical Operations, Head of Patient Recruitment, Clinical Innovation. Exhibit, sponsorship, or speaking slot would directly reach TrialScreen's primary buyer personas.",
+      "existing_connection": false
+    },
+    {
+      "company": "BIO (Biotechnology Innovation Organization)",
+      "segment": "Industry Body",
+      "hq_location": "Washington, DC, USA",
+      "region": "US",
+      "key_titles": [
+        "Conference Director",
+        "Membership Director",
+        "Head of Partnering"
+      ],
+      "company_size": "19,500+ attendees (BIO 2024); 1,400+ exhibitors",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "World's largest biotech trade association. BIO International Convention 2024: 19,500+ attendees, 70+ countries, 61,000+ partnering meetings. Primarily biotech executives and investors \u2014 pipeline companies are early-stage clinical trial buyers. Brand visibility and B2B partnering opportunities for TrialScreen.",
+      "existing_connection": false
+    },
+    {
+      "company": "Patients as Partners",
+      "segment": "Industry Body",
+      "hq_location": "USA / UK (conference events)",
+      "region": "US",
+      "key_titles": [
+        "Conference Director",
+        "Sponsorship Director",
+        "Head of Patient Engagement"
+      ],
+      "company_size": "500+ attendees per event",
+      "relationship_status": "cold",
+      "priority": 2,
+      "notes": "Conference series bringing together patient advocates, pharma, CROs, and regulators. Focus on patient-centered trial design and recruitment. Strong alignment with TrialScreen's patient-first positioning. Speaking opportunities would position TrialScreen as thought leader in patient engagement.",
+      "existing_connection": false
+    },
+    {
+      "company": "Transcelerate Biopharma",
+      "segment": "Industry Body",
+      "hq_location": "Philadelphia, PA, USA",
+      "region": "US",
+      "key_titles": [
+        "Executive Director",
+        "Program Lead",
+        "Innovation Director"
+      ],
+      "company_size": "Consortium of 30+ major pharma members",
+      "relationship_status": "known",
+      "priority": 2,
+      "notes": "Non-profit consortium of major pharma companies (including most TrialScreen Segment 1 targets). Drives industry-wide clinical trial innovation including centralized IRB models, diversity initiatives, and trial simplification. Membership includes all top-tier pharma. Engagement here could create warm introductions to multiple pharma sponsor contacts simultaneously.",
+      "existing_connection": false
+    },
+    {
+      "company": "Antidote Technologies",
+      "segment": "Competitor",
+      "hq_location": "New York, NY, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "200+",
+      "annual_revenue": "Not disclosed",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Digital patient recruitment platform. Partnered with SEQSTER (2024) to use EHR/genomic data for patient matching. Precision recruitment focus. Listed in Grand View Research as key market player. Direct TrialScreen competitor in digital patient recruitment.",
+      "existing_connection": false
+    },
+    {
+      "company": "Clara Health (acquired by M&B Sciences)",
+      "segment": "Competitor",
+      "hq_location": "San Diego, CA, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "<25",
+      "annual_revenue": "$6M",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Acquired by M&B Sciences in March 2022. Technology-driven CRO focused on patient-centric trial access. 24/7 live patient navigators. Small company post-acquisition; unclear current trajectory. Listed as market competitor.",
+      "existing_connection": false
+    },
+    {
+      "company": "Power (withpower.com / growwithpower.com)",
+      "segment": "Competitor",
+      "hq_location": "San Francisco, CA, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "50-100",
+      "annual_revenue": "Not disclosed",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. AI platform for clinical trial patient recruitment. Claims 33% reduction in recruitment timelines. Modern Clinical Trial Marketplace concept \u2014 3-sided platform (patients, sites, sponsors). Growing AI-based matching capability. Direct TrialScreen competitor.",
+      "existing_connection": false
+    },
+    {
+      "company": "Formation Bio (formerly TrialSpark)",
+      "segment": "Competitor",
+      "hq_location": "New York, NY, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "200+",
+      "annual_revenue": "Not disclosed (Series C: $156M)",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Rebranded from TrialSpark in Dec 2023. Evolved from clinical trial optimizer to full-stack drug developer. Partnership with 23andMe for trial recruitment. Completed recruitment 2.5x faster than industry standard. Unique hybrid model \u2014 not pure recruitment play but competes in the space.",
+      "existing_connection": false
+    },
+    {
+      "company": "StudyKIK",
+      "segment": "Competitor",
+      "hq_location": "Scottsdale, AZ, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "100+",
+      "annual_revenue": "Not disclosed",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Full-service patient recruitment and retention technology company. 6M+ patients reached; 3.1M+ patients connected to studies. Social media and indication-specific expertise. Listed as key market player in Grand View Research report.",
+      "existing_connection": false
+    },
+    {
+      "company": "Clariness",
+      "segment": "Competitor",
+      "hq_location": "Hamburg, Germany",
+      "region": "UK",
+      "key_titles": [],
+      "company_size": "200+",
+      "annual_revenue": "Not disclosed",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. European patient recruitment platform; ClinLife technology. Online patient recruitment, retention, surveys, and site selection. Strong EU presence with growing US operations. Listed as key market player alongside Antidote and Clara in multiple market reports.",
+      "existing_connection": false
+    },
+    {
+      "company": "AutoCruitment",
+      "segment": "Competitor",
+      "hq_location": "Raleigh, NC, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "96",
+      "annual_revenue": "$16.8M",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Direct-to-patient digital advertising and engagement for clinical trial recruitment. AI-powered EMR Capture & Intelligence completed April 2024. 96 employees, ~$16.8M revenue. Proprietary digital marketing platform. Listed in Grand View Research market report.",
+      "existing_connection": false
+    },
+    {
+      "company": "SubjectWell",
+      "segment": "Competitor",
+      "hq_location": "Minneapolis, MN, USA",
+      "region": "US",
+      "key_titles": [],
+      "company_size": "50-100",
+      "annual_revenue": "Not disclosed",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "COMPETITOR \u2014 monitor, do not pitch. Patient recruitment marketplace connecting pre-screened, opt-in patients to clinical trials. Focus on rare and chronic diseases. Listed by market research sources as a key clinical trial recruitment player.",
+      "existing_connection": false
+    },
+    {
+      "company": "Arvinas",
+      "segment": "Pharma Sponsor",
+      "hq_location": "New Haven, CT, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "300+",
+      "annual_rd_spend": "$400M",
+      "active_trials": "10+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Targeted protein degradation (PROTAC) platform. Lead drug vepdegestrant in Phase 3 breast cancer trials (two Ph3 underway). Novel modality \u2014 patient recruitment challenges for biomarker-selected populations.",
+      "existing_connection": false
+    },
+    {
+      "company": "Blueprint Medicines",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "700+",
+      "annual_rd_spend": "$500M",
+      "active_trials": "10+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Precision medicine company (kinase inhibitors). Ayvakit (avapritinib) for GIST and SM. Rare disease patient populations with significant recruitment challenges.",
+      "existing_connection": false
+    },
+    {
+      "company": "Beam Therapeutics",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Cambridge, MA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "300+",
+      "annual_rd_spend": "$400M",
+      "active_trials": "5+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Base editing pioneer. BEACON trial in sickle cell. Rare disease/gene therapy patient populations are extremely challenging to recruit. High value for TrialScreen rare disease targeting.",
+      "existing_connection": false
+    },
+    {
+      "company": "Iovance Biotherapeutics",
+      "segment": "Pharma Sponsor",
+      "hq_location": "San Carlos, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "700+",
+      "annual_rd_spend": "$500M",
+      "active_trials": "10+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "TIL (tumor-infiltrating lymphocyte) cell therapy company. Amtagvi (lifileucel) FDA-approved for melanoma 2024. Advanced oncology trials in cervical, lung, and other solid tumors.",
+      "existing_connection": false
+    },
+    {
+      "company": "Myovant Sciences / Sumitovant",
+      "segment": "Pharma Sponsor",
+      "hq_location": "Brisbane, CA, USA",
+      "region": "US",
+      "key_titles": [
+        "VP Clinical Operations",
+        "Head of Patient Recruitment",
+        "VP Clinical Development"
+      ],
+      "company_size": "500+",
+      "annual_rd_spend": "$300M",
+      "active_trials": "10+",
+      "relationship_status": "cold",
+      "priority": 3,
+      "notes": "Subsidiary of Sumitovant (Sumitomo). Relugolix franchise (Myfembree for endometriosis/uterine fibroids; Orgovyx for prostate cancer). Women's health and oncology trials with complex patient recruitment.",
+      "existing_connection": false
+    }
+  ]
+}
