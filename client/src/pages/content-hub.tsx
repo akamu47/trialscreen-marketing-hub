@@ -14,6 +14,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
 import { Plus, Sparkles, FileText, Send, User, Calendar } from "lucide-react";
 import type { ContentItem } from "@shared/schema";
+import { SEED_CONTENT } from "@/data/seed-content";
 
 const STATUSES = [
   { key: "draft", label: "Draft", color: "bg-muted text-muted-foreground" },
@@ -87,9 +88,19 @@ export default function ContentHub() {
   const [checkedItems, setCheckedItems] = useState<boolean[]>(new Array(complianceChecklist.length).fill(false));
   const { toast } = useToast();
 
-  const { data: content, isLoading } = useQuery<ContentItem[]>({
+  const { data: apiContent, isLoading: apiLoading, isError } = useQuery<ContentItem[]>({
     queryKey: ["/api/content"],
+    retry: 1,
+    retryDelay: 500,
   });
+
+  // Fallback to embedded seed data when API is unavailable (static deployment)
+  const content: ContentItem[] | undefined = (apiContent && apiContent.length > 0)
+    ? apiContent
+    : isError || (!apiLoading && (!apiContent || apiContent.length === 0))
+      ? SEED_CONTENT as ContentItem[]
+      : undefined;
+  const isLoading = apiLoading && !isError;
 
   const createMutation = useMutation({
     mutationFn: async (data: any) => {
